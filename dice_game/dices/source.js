@@ -8,16 +8,19 @@ function magic()
 
     console.log(parseInt(document.getElementById('counter').innerText.split(":")[1]));
 
+    document.getElementById('result').innerText = "";
     if(num1 == num2)
     {
         let value = 
         parseInt(document.getElementById('counter').innerText.split(":")[1]); 
             value = isNaN(value) ? 0 : value;
-            
+
         value++; 
 
         document.getElementById('counter').innerText =
             "כמות הפעמים שיצא לך דאבל : " + value;    
        
+        document.getElementById('result').innerText = 
+        "בר מזל !!! פעמים " + num1;  
     }
 }
